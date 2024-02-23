@@ -27,7 +27,7 @@ parser.add_argument('--input_dir', default='/kaggle/input/istd-dataset/ISTD_Data
     type=str, help='Directory of validation images')
 parser.add_argument('--result_dir', default='./results/',
     type=str, help='Directory for results')
-parser.add_argument('--weights', default='./log/ShadowFormer_istd/models/model_best.pth',
+parser.add_argument('--weights', default='/kaggle/working/ShadowFormer/ISTD_model_latest.pth',
     type=str, help='Path to weights')
 parser.add_argument('--gpus', default='0', type=str, help='CUDA_VISIBLE_DEVICES')
 parser.add_argument('--arch', default='ShadowFormer', type=str, help='arch')
