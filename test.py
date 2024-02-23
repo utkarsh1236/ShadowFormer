@@ -23,9 +23,9 @@ from skimage.metrics import structural_similarity as ssim_loss
 from sklearn.metrics import mean_squared_error as mse_loss
 
 parser = argparse.ArgumentParser(description='RGB denoising evaluation on the validation set of SIDD')
-parser.add_argument('--input_dir', default='/kaggle/input/istd-dataset/ISTD_Dataset/test',
+parser.add_argument('--input_dir', default='/kaggle/input/test-sample',
     type=str, help='Directory of validation images')
-parser.add_argument('--result_dir', default='./results/',
+parser.add_argument('--result_dir', default='./test_results/',
     type=str, help='Directory for results')
 parser.add_argument('--weights', default='/kaggle/working/ShadowFormer/ISTD_model_latest.pth',
     type=str, help='Path to weights')
